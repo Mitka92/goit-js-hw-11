@@ -1,5 +1,4 @@
-const galleryBox = document.querySelector('.gallery');
-export function renderPhotos(photos) {
+export function renderPhotos(photos, domElem) {
   const markup = photos
     .map(
       ({
@@ -36,5 +35,5 @@ export function renderPhotos(photos) {
       }
     )
     .join('');
-  galleryBox.innerHTML = markup;
+  domElem.innerHTML = markup;
 }
